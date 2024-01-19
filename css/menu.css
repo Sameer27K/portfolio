@@ -1,0 +1,46 @@
+/* menu.css */
+#menu-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+#sidebar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+#sidebar a:hover {
+  color: #818181;
+}
+
+#sidebar a:not(:last-child) {
+  border-bottom: 1px solid #818181;
+}
